@@ -1,0 +1,91 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 1024px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(to bottom left, rgb(255, 217, 0), rgb(255, 0, 200)) center center/cover no-repeat;
+}
+.title {
+	margin: 30px 0;
+	text-align: center;
+	color: #fff;
+}
+.island {
+	border-radius: 0.5rem;
+	background-color: white;
+}
+  
+.island__item {
+	padding: 1rem;
+}
+  
+.island__item + .island__item {
+	border-top: 1px solid rgb(238, 238, 238);
+}
+  
+.island + .island {
+	margin-top: 1rem;
+}
+.checked {
+	background: #888;
+	color: #fff;
+	text-decoration: line-through;
+}
+select {
+	margin: 0 10px;
+	height: 38px;
+	border-radius: 5px;
+	padding: 0 5px;
+}
+
+.special {
+	height: 38px;
+	border-radius: 5px;
+	padding: 0 5px;
+}
+.island__item{
+	position: relative;
+}
+.currentdate {
+	position: absolute;
+	right: 150px;
+}
+.number {
+	position: absolute;
+	right: 300px;
+}
+.stars {
+	position: absolute;
+	right: 400px;
+}
+.pencil {
+	position: absolute;
+	right: 90px;
+}
+.list_item {
+	order: 1;
+}
+.form-edit {
+	display: none;
+}
+.island__item_edit .form-edit{
+	display: flex;
+}
+.island__item_edit label{
+	display: none;
+}
+.island__item_edit .btn-warning{
+	display: none;
+}
+.list_item_active {
+	background: #888;
+	text-decoration: line-through;
+	order: 2;
+}
+.pointer {
+	pointer-events: none;
+}
