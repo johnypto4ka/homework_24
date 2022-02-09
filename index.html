@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/98db508811.js" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1 class="title">Sovereign Todo List</h1>
+		</header>
+		<div class="island bg-white rounded-3">
+		  <div class="island__item">
+			<form class="row g-3" id="formCreate">
+				<div class="col-9">
+					<input type="text" class="form-control" name="title" placeholder="Заголовок">
+				</div>
+				<div class="col-3">
+				<button type="submit" class="btn btn-primary w-100">Создать</button>
+				</div>
+				<div class="col-3">
+					<input type="number" class="special" name="number" placeholder="Введи число">
+				</div>
+				<select name="priority" id="stars" class="col-md-2">
+					<option value="none" hidden>Оценка</option>
+					<option value="0"></option>
+					<option value="1">⭐️</option>
+					<option value="2">⭐️⭐️</option>
+					<option value="3">⭐️⭐️⭐️</option>
+					<option value="4">⭐️⭐️⭐️⭐️</option>
+					<option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+			</select>
+			</form>
+		  </div>
+		</div>
+		<div class="island bg-white rounded-3">
+			<div class="island__item">
+				<div class="row g-3">
+					<div class="col-9">
+						<input type="text" class="form-control" name="title" id="searchTitle" placeholder="Поиск по заголовку">
+					</div>
+				  
+					<select id="sort" class="col-md-2">
+						<option value="none" hidden>Сортировать по..</option>
+						<option value="priority">Приоритет</option>
+						<option value="estimate">Оценка</option>
+			  		</select>
+				</div>
+			</div>
+		</div>
+		<div class="island d-flex flex-column" id="list">
+			<div class="island__item text-muted">Список пуст</div>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
+
+
